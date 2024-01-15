@@ -1,0 +1,22 @@
+#root {
+
+}
+
+.navbar--container{
+  border: solid 1px white;
+  text-align: center;
+}
+
+.navbar--text {
+  
+}
+
+.hero--container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+}
+
+.hero--card {
+  border: solid 1px white;
+}
