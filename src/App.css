@@ -12,11 +12,21 @@
 }
 
 .hero--container {
+  padding: 10px;
+  margin: 30px;
   display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 50px;
 }
 
 .hero--card {
-  border: solid 1px white;
+  padding: 20px 10px 10px 10px;
+  /* border: 1px solid white; */
+  min-height: auto; 
+  text-align: center;
+}
+
+.hero--card h3 {
+  padding-top: 10px;
 }
