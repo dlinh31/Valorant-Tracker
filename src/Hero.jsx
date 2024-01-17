@@ -6,7 +6,7 @@ function Card ({teamData}){
     return (
 
             <div className='hero--card'>
-                <img src={teamData.img} alt={`Team logo of ${teamData.name}`} />
+                <img className='hero--teamlogo' src={teamData.img} alt={`Team logo of ${teamData.name}`} />
                 <h3>{teamData.name}</h3>
             </div>
 
@@ -14,6 +14,12 @@ function Card ({teamData}){
 }
 
 function Hero (){
+    const [display, setDisplay] = useState({
+        teamList: true,
+        
+
+    })
+    
     const [stats, setStats] = useState([]);
 
     useEffect(()=> {
@@ -23,7 +29,6 @@ function Hero (){
         }))
         .then(res => res.json())
         .then(data => setStats(data['data']))
-
     }, [stats])
 
     return (

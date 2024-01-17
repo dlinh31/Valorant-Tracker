@@ -1,11 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "FF Mark W05",Arial,sans-serif;
+  font-size: 14px !important;
+  font-weight: bold;
   line-height: 1.5;
 
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #FFFBF5;
+  background-color: #FFFBF5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,18 +34,24 @@ h1 {
 }
 
 button {
+   font-family: "FF Mark W05", Arial, sans-serif;
+  font-size: 14px; 
+  font-weight: bold;
+  line-height: 1.5;
+  margin-left: 10px; /* Assuming you still want the spacing between buttons */
+  /* Additional styling for buttons if needed */
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #FD4556;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #000000;
 }
 button:focus,
 button:focus-visible {

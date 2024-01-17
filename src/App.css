@@ -2,13 +2,65 @@
 
 }
 
-.navbar--container{
-  border: solid 1px white;
-  text-align: center;
+body {
+  margin: 0px;
 }
 
+.navbar--container{
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  height: 70px;
+  width: 100%; /* Full width */
+  background-color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 100px auto auto;
+  align-items: center;
+}
+
+
+.navbar--buttons {
+  display: grid;
+  grid-auto-flow: column; /* Place buttons in a row */
+  grid-gap: 10px; /* Gap between buttons */
+  justify-self: end; /* Align the button group to the end */
+  margin-right: 20px;
+}
+
+.navbar--buttons button {
+  font-family: "FF Mark W05", Arial, sans-serif;
+  font-size: 14px; 
+  font-weight: bold;
+  line-height: 1.5;
+  margin-left: 10px; 
+
+  padding: 0.5em 1em; /* Example padding, adjust as needed */
+  border: none; /* Removes the border, if you want */
+  background: transparent; /* Makes the background transparent, adjust as needed */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+  background-color: #000000;
+  transition: border-color 0.25s;
+
+}
+.navbar--buttons button:hover{
+  background-color: #FD4556;
+  border: #FD4556;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+
 .navbar--text {
-  
+  justify-self: start;
+  margin-left: 20px;
+
+}
+.navbar--logo {
+  height: 50px; /* or the height of your navbar */
+  width: auto; /* to maintain the aspect ratio */
+  margin-left: 20px;
+  margin-right: 20px; /* adjust the spacing between the logo and the navbar title */
+  align-self: center; /* to vertically align it in case your navbar uses flexbox */
 }
 
 .hero--container {
@@ -22,11 +74,27 @@
 
 .hero--card {
   padding: 20px 10px 10px 10px;
+  margin-top: 70px;
+  border-radius: 5%;
   /* border: 1px solid white; */
   min-height: auto; 
   text-align: center;
+  background-color: hsla(47,11%,84%,.6);
+}
+
+.hero--card:hover {
+  background-color: hsla(47, 11%, 84%, 0.853);
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .hero--card h3 {
   padding-top: 10px;
+  color: #000000;
+}
+
+.hero--teamlogo {
+  max-width: 80%; /* Adjust the percentage as needed */
+  height: auto; /* Keep the aspect ratio */
+  margin-top: 10px;
+  margin-bottom: 10px; /* Space between the logo and the team name */
 }
