@@ -13,12 +13,8 @@ function Card ({teamData}){
     )
 }
 
-function Hero (){
-    const [display, setDisplay] = useState({
-        teamList: true,
-        
+function Hero ({display}){
 
-    })
     
     const [stats, setStats] = useState([]);
 
@@ -36,7 +32,7 @@ function Hero (){
         <div className='hero--container'>
            
         {stats.map((data,index) => {
-            return (<Card teamData={data} key={index}/>)
+            return (display.teamList ? <Card teamData={data} key={index}/> : null)
         })}
 
         </div>

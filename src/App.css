@@ -1,9 +1,9 @@
 #root {
-
 }
 
 body {
   margin: 0px;
+
 }
 
 .navbar--container{
@@ -53,6 +53,7 @@ body {
 .navbar--text {
   justify-self: start;
   margin-left: 20px;
+  letter-spacing: 2px;
 
 }
 .navbar--logo {
@@ -60,16 +61,16 @@ body {
   width: auto; /* to maintain the aspect ratio */
   margin-left: 20px;
   margin-right: 20px; /* adjust the spacing between the logo and the navbar title */
-  align-self: center; /* to vertically align it in case your navbar uses flexbox */
+  align-self: center; 
 }
 
 .hero--container {
   padding: 10px;
-  margin: 30px;
+  margin: 30px 150px 30px 150px;
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  row-gap: 50px;
+  row-gap: 30px;
 }
 
 .hero--card {
@@ -79,7 +80,9 @@ body {
   /* border: 1px solid white; */
   min-height: auto; 
   text-align: center;
-  background-color: hsla(47,11%,84%,.6);
+  background-color: hsla(0, 5%, 85%, 0.361);
+  
+  
 }
 
 .hero--card:hover {
