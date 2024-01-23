@@ -6,6 +6,7 @@ import Hero from './Hero'
 function App() {
   const [display, setDisplay] = useState({
     teamList: false,
+    loadingIcon: true,
     tournamentList: false,
 
   })
@@ -27,7 +28,7 @@ function App() {
   return (
     <>
     <Navbar handleDisplay={handleDisplay}/>
-    <Hero display={display}/>
+    <Hero display={display} setDisplay={setDisplay}/>
     </>
   )
 }
